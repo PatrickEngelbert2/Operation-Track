@@ -1,27 +1,78 @@
-# TaskTracker
+# Operation Tracker
+## A task tracking app built with Angular and Typescript
+---
+## Installation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Clone the repository and move into the file with:
+```sh
+git clone https://github.com/PatrickEngelbert2/Operation-Track
+cd task-tracker
+```
+Install dependancies and run the front end. Front-end will run on port 4200.
+```sh
+npm install
+ng serve
+```
 
-## Development server
+Open a second terminal to run the following command. This will run the server on port 5000.
+```sh
+npm run server
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> By this point, the program should be ready to go!
+> Navigate to "http://localhost:4200/" in your browser and start exploring! 
 
-## Code scaffolding
+---
+## Tutorial
+---
+#### Add a task
+> To add a task, click the green "**Add**" button in the top right corner.
+> You will be presented with a from with the fields: title, day and time, and reminder. 
+> Fill out the form and click "**Save Task**" when finished. 
+> To cancel this add task, click the red "Close" button in the top right corner
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+#### Delete a task
+> To delete a task scroll to the task to be deleted and click the red "**X**" on the right side of it's card. 
+> *Note*: This cannot be undone!!!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Update a task (set a reminder)
+> You can see whether a task has a reminder set by checking if it 
+> has a verticle green bar on the left side of it. 
+> Forgot to set a reminder during task creation, or want to 
+> cancel your reminder without deleting the task? I've got you! 
+> **Double-click** on the task you want to change to toggle the reminder. 
 
-## Running unit tests
+#### About Section
+> To go to the about page, click the "**About**" link at the bottom of the page. 
+> To return home, click the "**Go Home**" button.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
+## Tech
 
-## Running end-to-end tests
+Operation Tracker uses a number of technologies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [Angular] - HTML enhanced for web apps!
+- [TypeScript] - awesome strongly typed version of Javascript
+- [markdown]
+- [Twitter Bootstrap] - great UI boilerplate for modern web apps
+- [node.js] - evented I/O for the backend
+- [json-server] - fast mock back-end framework
 
-## Further help
+##### Checkout the repo at this link to [my-git-repo].
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+## License
+
+MIT
+**Free Software, Heck Yeah!**
+
+
+   [dill]: <https://github.com/joemccann/dillinger>
+   [my-git-repo]: <https://github.com/PatrickEngelbert2/Operation-Track>
+   [TypeScript]: <https://www.typescriptlang.org/>
+   [markdown]: <https://www.markdownguide.org/>
+   [node.js]: <http://nodejs.org>
+   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
+   [json-server]: <https://github.com/typicode/json-server>
+   [Angular]: <https://angular.io/>
