@@ -2,7 +2,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
 import { Task } from 'src/app/Task';
-import { TaskItemComponent } from '../task-item/task-item.component';
 
 @Component({
   selector: 'app-edit-task',
@@ -11,7 +10,7 @@ import { TaskItemComponent } from '../task-item/task-item.component';
 })
 export class EditTaskComponent implements OnInit {
   @Output() onUpdateTask: EventEmitter<Task> = new EventEmitter();
-  @Output() onCancelEdit: EventEmitter<Task> = new EventEmitter;
+  @Output() onCancelEdit: EventEmitter<Task> = new EventEmitter();
   text!: string;
   day!: string;
   reminder!: boolean;
@@ -28,7 +27,7 @@ export class EditTaskComponent implements OnInit {
 
   onCancel(task: Task) {
     this.onCancelEdit.emit(task);
-    this.uiService.toggleEditTask();
+    this.uiService.onToggleEdit();
   }
 
   onSubmit() {
