@@ -1,4 +1,9 @@
-<div [ngClass]="{ reminder: task.reminder }" class="task" (dblclick)="onToggle(task)">
+<div
+  [ngClass]="{ reminder: task.reminder }"
+  class="task"
+  (dblclick)="onToggle(task)"
+>
+  <fa-icon class="fa-lg edit" [icon]="faEdit" (click)="onToggleEditTask(task)"></fa-icon>
   <h3>
     {{ task.text }}
     <fa-icon
@@ -8,4 +13,5 @@
     ></fa-icon>
   </h3>
   <p>{{ task.day }}</p>
+  <app-edit-task (task)="task"></app-edit-task>
 </div>
